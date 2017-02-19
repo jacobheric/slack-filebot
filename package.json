@@ -1,0 +1,18 @@
+{
+  "name": "slack",
+  "version": "1.0.0",
+  "description": "a simple bot to delete files in slack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacob Heric",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/client": "^3.8.1",
+    "async": "^2.1.5"
+  },
+  "devDependencies": {
+    "eslint": "latest"
+  }
+}
