@@ -73,7 +73,7 @@ function _help(message) {
   rtm.sendMessage('Your request to delete files must in include the number ' +
       'of months older than which you want me to delete files. Example:' +
       ' \n\n ' +
-      '"@deletebot, please delete all files older than 10 months"',
+      '"@filebot, please delete all files older than 10 months"',
       message.channel);
 }
 
