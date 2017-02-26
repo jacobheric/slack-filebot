@@ -113,8 +113,7 @@ function _deleteFiles(message, conversation) {
       message.channel, () => {});
 
   async.forEachSeries(conversation.fileIds, (id, callback) => {
-    web.files.delete(id);
-    callback();
+    web.files.delete(id, callback);
   }, (err) => {
 
     conversations.splice(conversations.findIndex((c) => {
