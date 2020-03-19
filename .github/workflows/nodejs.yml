@@ -39,4 +39,4 @@ jobs:
       - name: Deploy the app
         run: |
           scp -i $HOME/.ssh/id_rsa -r * www@jacobheric.com:/home/www/filebot
-          ssh -i $HOME/.ssh/id www@jacobheric.com 'cd /home/www/filebot && pm2 restart filebot.config.js'
+          ssh -i $HOME/.ssh/id www@jacobheric.com 'cd /home/www/filebot && pm2 restart index.js --update-env'
